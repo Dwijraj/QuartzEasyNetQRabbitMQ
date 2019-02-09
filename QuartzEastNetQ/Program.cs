@@ -62,7 +62,7 @@ namespace QuartzEastNetQ
                 .Build();
 
                 ITrigger neoloadtestexecutorjobTrigger1 = TriggerBuilder.Create()
-                    .WithIdentity("Trigger", "Trigger which kicks start the IJob")
+                    .WithIdentity("Trigger2", "Trigger which kicks start the IJob")
                     .StartNow()
                     .WithSimpleSchedule(x => x
                         .WithIntervalInSeconds(10)

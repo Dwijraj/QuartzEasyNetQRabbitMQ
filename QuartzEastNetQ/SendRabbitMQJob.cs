@@ -19,10 +19,13 @@ namespace QuartzEastNetQ
         }
         private void SendToQueue()
         {
-
-            Console.Write("Sending Message to Queue");
+            for (int i = 0; i < 100; i++)
+            {
+                Console.Write("Sending Message to Queue");
                 Program.bus.Send("MyTestQueue", "TestObject");
-            
+
+            }
+
         }
     }
 }
